@@ -608,6 +608,8 @@ export const getAggregatedData = async () => {
       { name: toLowerLine('date'), value: `${selfDayjs().format('YYYY-MM-DD')} ${weekList[selfDayjs().format('d')]}`, color: getColor() },
       { name: toLowerLine('province'), value: user.province || config.PROVINCE, color: getColor() },
       { name: toLowerLine('city'), value: user.city || config.CITY, color: getColor() },
+      { name: toLowerLine('slee'), value: user.score_lee },
+      { name: toLowerLine('swillow'), value: user.score_willow },
       { name: toLowerLine('weather'), value: weather, color: getColor() },
       { name: toLowerLine('minTemperature'), value: minTemperature, color: getColor() },
       { name: toLowerLine('maxTemperature'), value: maxTemperature, color: getColor() },
