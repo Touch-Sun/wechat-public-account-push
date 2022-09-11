@@ -50,15 +50,15 @@ export const config = {
       score_lee: lee,
       score_willow: willow,
       // 想要发送的人的名字
-      name: "亲爱的媳妇儿",
+      name: "♥我滴大宝儿",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: "opMAm6jj7onzvv4AEnEY83t_PkIU",
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: "Y6xMGmXL2yyZpxiYKrgPFlELF8UK4VTqyylWn0E8i0M",
+      useTemplateId: "1ejNwBPYsSUelWbBzSf9HWu3Q0Yoq1mb3OH1pwlGX6U",
       // 所在省份
       province: "黑龙江",
       // 所在城市
-      city: "最浪漫的地球村",
+      city: "你的心里♥",
       // 新历生日, 仅用作获取星座运势, 格式必须
       horoscopeDate: '10-30',
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
