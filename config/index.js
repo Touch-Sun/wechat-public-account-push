@@ -12,7 +12,7 @@ const res = await axios.get(api, {
   responseType: 'json'
 }).catch(err => err);
 score = res.data.data;
-console.log(score[0].score)
+console.log(score);
 
 export const config = {
   /**
@@ -46,8 +46,8 @@ export const config = {
    */
   USERS: [
     {
-      score_lee: lee,
-      score_willow: willow,
+      score_lee: score,
+      score_willow: score,
       // 想要发送的人的名字
       name: "亲爱的媳妇儿",
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
