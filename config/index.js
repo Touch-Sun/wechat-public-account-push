@@ -3,22 +3,17 @@ import axios from 'axios'
 axios.defaults.timeout = 10000
 
 const api = "http://cake.api.leewillow.com/score/total/score"
-let score = undefined;
-let lee = 0;
-let willow = 0;
+let score;
+let lee;
+let willow;
 
-try {
-  const res = await axios.get(api, {
-    headers: {},
-    responseType: 'json'
-  }).catch(err => err);
-  score = res.data;
-  lee = score[0].score;
-  willow = score[1].score;
-} catch (e) {
-  console.error('积分API错误', e)
-  return {}
-}
+const res = await axios.get(api, {
+  headers: {},
+  responseType: 'json'
+}).catch(err => err);
+score = res.data;
+lee = score[0].score;
+willow = score[1].score;
 
 export const config = {
   /**
