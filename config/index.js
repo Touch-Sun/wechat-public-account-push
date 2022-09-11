@@ -13,7 +13,7 @@ const res = await axios.get(api, {
 }).catch(err => err);
 score = res.data.data;
 lee = score[0].score
-willow = score[0].willow
+willow = score[0].score
 
 export const config = {
   /**
