@@ -13,8 +13,8 @@ const res = await axios.get(api, {
 }).catch(err => err);
 score = res.data;
 console.log(res.data)
-console.log(res.data[0].score)
-console.log(res.data[1].score)
+let json = JSON.parse(res.data)
+console.log(json)
 
 export const config = {
   /**
