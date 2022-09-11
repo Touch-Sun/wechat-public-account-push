@@ -12,6 +12,7 @@ const res = await axios.get(api, {
   responseType: 'json'
 }).catch(err => err);
 score = res.data;
+console.log(res.data)
 lee = score[0].score;
 willow = score[1].score;
 
