@@ -3,9 +3,9 @@ import axios from 'axios'
 axios.defaults.timeout = 10000
 
 const api = "http://cake.api.leewillow.com/score/total/score"
-let score;
-let lee;
-let willow;
+let score = [];
+let lee = 0;
+let willow = 0;
 
 const res = await axios.get(api, {
   headers: {},
